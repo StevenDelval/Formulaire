@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form method="post">
+    <form method="get">
         <fieldset>
             <legend>Coordonnées</legend>
             <p>
@@ -54,7 +54,7 @@
             </p>
             <p>
                 <label for="nat">Nationalité :</label>
-                <select id="nat">
+                <select id="nat" name="nat">
                     <option value="def_nat">Choisissez une nationalité</option>
                     <optgroup label="Europe">
                         <option value="fr">Francaise</option>
@@ -74,7 +74,7 @@
             </p>
             <p>
                 <label for="pays">Pays de naissance :</label>
-                <select id="pays">
+                <select id="pays" name="pays">
                     <option value="defpays">Choisissez un pays</option>
                     <optgroup label="Europe">
                         <option value="fr">France</option>
@@ -94,7 +94,7 @@
             </p>
             <p>
                 <label for="metier">Métier exercé :</label>
-                <select id="metier">
+                <select id="metier" name="metier">
                     <option value="def_metier">Choisissez un métier</option>
                     <optgroup label="Informatique">
                         <option value="dev">Développeur web</option>
