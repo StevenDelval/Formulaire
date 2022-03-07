@@ -14,47 +14,47 @@
             <legend>Coordonnées</legend>
             <p>
                 <label for="prenom">Prénom :</label>
-                <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+                <input tabindex="1" type="text" id="prenom" name="prenom" placeholder="Prénom">
             </p>
             <p>
                 <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" placeholder="Nom">
+                <input tabindex="2" type="text" id="nom" name="nom" placeholder="Nom">
             </p>
             <p>
                 <label for="age">Age :</label>
-                <input type="number" id="age" name="age" min="0" placeholder="0">
+                <input tabindex="3" type="number" id="age" name="age" min="0" placeholder="0">
             </p>
             <p>
                 <label for="date_de_naissance">Date de naissance :</label>
-                <input tabindex="3" type="date" id="date_de_naissance" name="date_de_naissance">
+                <input tabindex="4" type="date" id="date_de_naissance" name="date_de_naissance">
             </p>
             <p>Sexe :
                 <label for="h">Homme</label>
-                <input id="h" value="h" name="sexe" type="radio">
+                <input tabindex="5" id="h" value="h" name="sexe" type="radio">
                 <label for="f">Femme</label>
-                <input id="f" value="f" name="sexe" type="radio">
+                <input tabindex="6" id="f" value="f" name="sexe" type="radio">
                 <label for="autre">Autre</label>
-                <input id="autre" value="autre" name="sexe" type="radio">
+                <input tabindex="7" id="autre" value="autre" name="sexe" type="radio">
             </p>
             <p>
                 <label for="mail">Adresse Mail :</label>
-                <input type="email" name="mail" id="mail" placeholder="Exemple: prénom.nom@gmail.com" size="30">
+                <input tabindex="8" type="email" name="mail" id="mail" placeholder="Exemple: prénom.nom@gmail.com" size="30">
             </p>
             <p>
                 <label for="adresse">Adresse postale :</label>
-                <input type="text" id="adresse" name="adresse" placeholder="0 rue de valenciennes">
+                <input tabindex="9" type="text" id="adresse" name="adresse" placeholder="0 rue de valenciennes">
             </p>
             <p>
                 <label for="code_postale">Code postale :</label>
-                <input type="text" id="code_postale" name="code_postale" placeholder="59300" pattern="[0-9]{5}">
+                <input tabindex="10" type="text" id="code_postale" name="code_postale" placeholder="59300" pattern="[0-9]{5}">
             </p>
             <p>
                 <label for="ville">Ville :</label>
-                <input type="text" name="ville" id="ville" placeholder="Valenciennes">
+                <input tabindex="11" type="text" name="ville" id="ville" placeholder="Valenciennes">
             </p>
             <p>
                 <label for="nat">Nationalité :</label>
-                <select id="nat" name="nat">
+                <select tabindex="12" id="nat" name="nat">
                     <option value="def_nat">Choisissez une nationalité</option>
                     <optgroup label="Europe">
                         <option value="fr">Francaise</option>
@@ -74,7 +74,7 @@
             </p>
             <p>
                 <label for="pays">Pays de naissance :</label>
-                <select id="pays" name="pays">
+                <select tabindex="13" id="pays" name="pays">
                     <option value="defpays">Choisissez un pays</option>
                     <optgroup label="Europe">
                         <option value="fr">France</option>
@@ -94,7 +94,7 @@
             </p>
             <p>
                 <label for="metier">Métier exercé :</label>
-                <select id="metier" name="metier">
+                <select tabindex="14" id="metier" name="metier">
                     <option value="def_metier">Choisissez un métier</option>
                     <optgroup label="Informatique">
                         <option value="dev">Développeur web</option>
@@ -115,29 +115,28 @@
             </p>
             <p>
                 <label for="num_sec">Numéro de sécurité social :</label>
-                <input type="text" id="num_sec" name="num_sec" placeholder="1000000000000" pattern="[12]{1}[0-9]{12}"
-                    size="13">
+                <input tabindex="15" type="text" id="num_sec" name="num_sec" placeholder="1000000000000" pattern="[12]{1}[0-9]{12}"size="13">
             </p>
         </fieldset>
         <fieldset>
             <legend>Passeport</legend>
             <p>
                 <label for="num_pass">Numéro du passeport :</label>
-                <input type="text" id="num_pass" name="num_pass" placeholder="9999999ZZ" pattern="[0-9]{7}[a-zA-Z]{2}" maxlength="9" size="9">
+                <input tabindex="16" type="text" id="num_pass" name="num_pass" placeholder="9999999ZZ" pattern="[0-9]{7}[a-zA-Z]{2}" maxlength="9" size="9">
             </p>
             <p>
                 <label for="date_de_delivrance">Date de délivrance du passport :</label>
-                <input type="date" id="date_de_delivrance" name="date_de_delivrance">
+                <input tabindex="17" type="date" id="date_de_delivrance" name="date_de_delivrance">
             </p>
             <p>
                 <label for="date_de_validite">Date de validité du passport :</label>
-                <input type="date" id="date_de_validite" name="date_de_validite">
+                <input tabindex="18" type="date" id="date_de_validite" name="date_de_validite">
             </p>
         </fieldset>
         <fieldset>
             <legend>Action</legend>
-            <input type="reset" value="Effacer">
-            <input type="submit" value="Envoyer">
+            <input tabindex="19" type="reset" value="Effacer">
+            <input tabindex="20" type="submit" value="Envoyer">
         </fieldset>
     </form>
 </body>
