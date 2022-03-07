@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Coordonnées</legend>
+            <p>
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+            </p>
+            <p>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Nom">
+            </p>
+            <p>
+                <label for="age">Age :</label>
+                <input type="number" id="age" name="age" min="0" placeholder="0">
+            </p>
+            <p>
+                <label for="date_de_naissance">Date de naissance :</label>
+                <input tabindex="3" type="date" id="date_de_naissance" name="date_de_naissance">
+            </p>
+            <p>Sexe :
+                <label for="h">Homme</label>
+                <input id="h" value="h" name="sexe" type="radio">
+                <label for="f">Femme</label>
+                <input id="f" value="f" name="sexe" type="radio">
+                <label for="autre">Autre</label>
+                <input id="autre" value="autre" name="sexe" type="radio">
+            </p>
+            <p>
+                <label for="mail">Adresse Mail :</label>
+                <input type="email" name="mail" id="mail" placeholder="Exemple: prénom.nom@gmail.com" size="30">
+            </p>
+            <p>
+                <label for="adresse">Adresse postale :</label>
+                <input type="text" id="adresse" name="adresse" placeholder="0 rue de valenciennes">
+            </p>
+            <p>
+                <label for="code_postale">Code postale :</label>
+                <input type="text" id="code_postale" name="code_postale" placeholder="59300" pattern="[0-9]{5}">
+            </p>
+            <p>
+                <label for="ville">Ville :</label>
+                <input type="text" name="ville" id="ville" placeholder="Valenciennes">
+            </p>
+            <p>
+                <label for="nat">Nationalité :</label>
+                <select id="nat">
+                    <option value="def_nat">Choisissez une nationalité</option>
+                    <optgroup label="Europe">
+                        <option value="fr">Francaise</option>
+                        <option value="be">Belge</option>
+                        <option value="al">Allemande</option>
+                    </optgroup>
+                    <optgroup label="Asie">
+                        <option value="jp">Japonnaise</option>
+                        <option value="ch">Chinoise</option>
+                        <option value="in">Indienne</option>
+                    </optgroup>
+                    <optgroup label="Amérique">
+                        <option value="usa">Américains</option>
+                        <option value="ca">Canadienne</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="pays">Pays de naissance :</label>
+                <select id="pays">
+                    <option value="defpays">Choisissez un pays</option>
+                    <optgroup label="Europe">
+                        <option value="fr">France</option>
+                        <option value="be">Belgique</option>
+                        <option value="al">Allemagne</option>
+                    </optgroup>
+                    <optgroup label="Asie">
+                        <option value="jp">Japon</option>
+                        <option value="ch">Chine</option>
+                        <option value="in">Inde</option>
+                    </optgroup>
+                    <optgroup label="Amérique">
+                        <option value="usa">Etat-Unie</option>
+                        <option value="ca">Canada</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="metier">Métier exercé :</label>
+                <select id="metier">
+                    <option value="def_metier">Choisissez un métier</option>
+                    <optgroup label="Informatique">
+                        <option value="dev">Développeur web</option>
+                        <option value="sec">Analyste cybersécurité</option>
+                        <option value="ux">UX designer</option>
+                    </optgroup>
+                    <optgroup label="Artisanat d'art">
+                        <option value="fleuriste">Fleuriste</option>
+                        <option value="bijoutier">Bijoutier</option>
+                        <option value="horloger">Horloger</option>
+                    </optgroup>
+                    <optgroup label="Industrie">
+                        <option value="contremaître">Contremaître</option>
+                        <option value="soudeur">Soudeur</option>
+                        <option value="roboticien">Roboticien</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="num_sec">Numéro de sécurité social :</label>
+                <input type="text" id="num_sec" name="num_sec" placeholder="1000000000000" pattern="[0-9]{13}"
+                    size="13">
+            </p>
+            <p>
+                <label for="num_pass">Numéro du passeport :</label>
+                <input type="text" id="num_pass" name="num_pass" placeholder="9999999ZZ" maxlength="9" size="9">
+            </p>
+            <p>
+                <label for="date_de_delivrance">Date de délivrance du passport :</label>
+                <input type="date" id="date_de_delivrance" name="date_de_delivrance">
+            </p>
+            <p>
+                <label for="date_de_validite">Date de validité du passport :</label>
+                <input type="date" id="date_de_validite" name="date_de_validite">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Action</legend>
+            <input type="reset" value="Effacer">
+            <input type="submit" value="Envoyer">
+        </fieldset>
+    </form>
+</body>
+
+</html>
