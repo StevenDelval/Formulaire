@@ -115,7 +115,7 @@
             </p>
             <p>
                 <label for="num_sec">Numéro de sécurité social :</label>
-                <input type="text" id="num_sec" name="num_sec" placeholder="1000000000000" pattern="[0-9]{13}"
+                <input type="text" id="num_sec" name="num_sec" placeholder="1000000000000" pattern="[12]{1}[0-9]{12}"
                     size="13">
             </p>
         </fieldset>
@@ -123,7 +123,7 @@
             <legend>Passeport</legend>
             <p>
                 <label for="num_pass">Numéro du passeport :</label>
-                <input type="text" id="num_pass" name="num_pass" placeholder="9999999ZZ" maxlength="9" size="9">
+                <input type="text" id="num_pass" name="num_pass" placeholder="9999999ZZ" pattern="[0-9]{7}[a-zA-Z]{2}" maxlength="9" size="9">
             </p>
             <p>
                 <label for="date_de_delivrance">Date de délivrance du passport :</label>
