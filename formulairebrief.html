@@ -14,11 +14,11 @@
             <legend>Coordonnées</legend>
             <p>
                 <label for="prenom">Prénom :</label>
-                <input tabindex="1" type="text" id="prenom" name="prenom" placeholder="Prénom">
+                <input tabindex="1" type="text" id="prenom" name="prenom" placeholder="Prénom" pattern="[a-zA-Zéèà]{1,}">
             </p>
             <p>
                 <label for="nom">Nom :</label>
-                <input tabindex="2" type="text" id="nom" name="nom" placeholder="Nom">
+                <input tabindex="2" type="text" id="nom" name="nom" placeholder="Nom" pattern="[a-zA-Zéèà]{1,}">
             </p>
             <p>
                 <label for="age">Age :</label>
@@ -50,7 +50,7 @@
             </p>
             <p>
                 <label for="ville">Ville :</label>
-                <input tabindex="11" type="text" name="ville" id="ville" placeholder="Valenciennes">
+                <input tabindex="11" type="text" name="ville" id="ville" placeholder="Valenciennes" pattern="[a-zA-Zéèà]{1,}">
             </p>
             <p>
                 <label for="nat">Nationalité :</label>
@@ -115,7 +115,7 @@
             </p>
             <p>
                 <label for="num_sec">Numéro de sécurité social :</label>
-                <input tabindex="15" type="text" id="num_sec" name="num_sec" placeholder="1000000000000" pattern="[12]{1}[0-9]{12}" size="13">
+                <input tabindex="15" type="text" id="num_sec" name="num_sec" placeholder="100000000000000" pattern="[12]{1}[0-9]{14}" size="15">
             </p>
         </fieldset>
         <fieldset>
