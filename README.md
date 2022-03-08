@@ -1,6 +1,6 @@
 # Formulaire Brief n°1
 
-Un formulaire avec tous les champs suivants :
+Un formulaire en html uniquement avec tous les champs suivants :
 
 Prénom
 
